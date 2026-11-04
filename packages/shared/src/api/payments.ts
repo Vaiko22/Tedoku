@@ -84,6 +84,9 @@ export const consultationsApi = {
     request<ChatMessage>({ method: 'POST', path: E.consultations.messages, params: { id }, body: { text } }, () => {
       const msg: ChatMessage = { id: P.nextMessageId(), from, text };
       find(id).messages.push(msg);
+      // Placeholder doctor reply so the chat feels alive while there is no backend.
+      if (from === 'patient')
+        setTimeout(() => find(id).messages.push({ id: P.nextMessageId(), from: 'doctor', text: P.doctorAutoReply }), 900);
       return msg;
     }),
   /** Polls for new messages. Replace with a websocket when the backend has one. */
@@ -97,7 +100,14 @@ export const consultationsApi = {
         from: 'system',
         text: `You shared your ${fields.map((f) => names[f]).join(', ')} with ${doctorFirst} for ${duration}. You can revoke this any time.`,
       };
-      find(id).messages.push(msg);
+      const c = find(id);
+      c.messages.push(msg);
+      // What the doctor sees in their chat header.
+      c.revealed = {
+        name: fields.includes('name') ? 'Amara O.' : undefined,
+        phone: fields.includes('phone') ? '+234 800 000 0000' : undefined,
+        until: duration,
+      };
       return msg;
     }),
   /** Patient marks complete: releases escrow and records an anonymous rating. */
