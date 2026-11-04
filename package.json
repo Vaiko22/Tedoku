@@ -1,0 +1,18 @@
+{
+  "name": "tedoku",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "admin": "npm run dev -w @tedoku/admin",
+    "admin:build": "npm run build -w @tedoku/admin",
+    "mobile": "npm run start -w @tedoku/mobile",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "overrides": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@tedoku/shared",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Types, API client, placeholder data and theme tokens shared by the Tedoku mobile app and admin dashboard.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3"
+  }
+}
