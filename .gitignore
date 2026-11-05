@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.expo/
+.vite/
+*.tsbuildinfo
+.env
+.env.local
+ios/
+android/
+.DS_Store

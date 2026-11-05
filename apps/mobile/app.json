@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Tedoku",
+    "slug": "tedoku",
+    "scheme": "tedoku",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FBF7F4",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tedoku.app"
+    },
+    "android": {
+      "package": "com.tedoku.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#5B2A86",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": ["expo-router", "expo-font"]
+  }
+}
