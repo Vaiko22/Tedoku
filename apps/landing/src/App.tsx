@@ -14,6 +14,7 @@ export default function App() {
       position: 'relative',
       overflow: 'hidden',
     }}>
+      {/* Updated with direct APK download link */}
       {/* Animated background elements */}
       <div style={{
         position: 'absolute',
