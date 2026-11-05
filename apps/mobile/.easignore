@@ -1,0 +1,6 @@
+# EAS Ignore - files to exclude from build
+node_modules/
+.expo/
+.expo-shared/
+*.log
+.DS_Store
