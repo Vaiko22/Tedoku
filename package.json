@@ -8,6 +8,8 @@
   "scripts": {
     "admin": "npm run dev -w @tedoku/admin",
     "admin:build": "npm run build -w @tedoku/admin",
+    "landing": "npm run dev -w @tedoku/landing",
+    "landing:build": "npm run build -w @tedoku/landing",
     "mobile": "npm run start -w @tedoku/mobile",
     "typecheck": "npm run typecheck --workspaces --if-present"
   },
