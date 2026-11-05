@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { colors } from '@tedoku/shared'
 
-// Replace this with your actual APK download URL from Expo build
-const APK_DOWNLOAD_URL = 'https://expo.dev/accounts/george-0zoemena/projects/tedoku/builds/latest'
+// Direct APK download URL from Expo build
+const APK_DOWNLOAD_URL = 'https://expo.dev/accounts/george-0zoemena/projects/tedoku/builds/5992c416-25e0-4e05-9840-9f897b72acf6'
 
 export default function App() {
   const [isHovered, setIsHovered] = useState(false)
@@ -91,7 +91,7 @@ export default function App() {
 
       {/* Hero Section */}
       <main style={{
-        padding: '80px 48px',
+        padding: '80px 48px 80pc',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         gap: '80px',
@@ -104,7 +104,7 @@ export default function App() {
         {/* Left Content */}
         <div>
           {/* Status Badge */}
-          <div style={{
+          {/* <div style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: '8px',
@@ -129,7 +129,7 @@ export default function App() {
             }}>
               Available Now
             </span>
-          </div>
+          </div> */}
 
           {/* Main Heading */}
           <h1 style={{

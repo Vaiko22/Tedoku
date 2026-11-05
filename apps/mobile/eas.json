@@ -12,9 +12,8 @@
     "preview": {
       "distribution": "internal",
       "node": "22.14.0",
-      "env": {
-        "NODE_ENV": "production",
-        "EAS_BUILD_WORKINGDIR": "../.."
+      "android": {
+        "buildType": "apk"
       }
     },
     "production": {
